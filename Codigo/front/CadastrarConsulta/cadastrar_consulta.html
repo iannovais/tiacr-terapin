@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Marcar consulta</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar"></nav>
+
+    <main class="conteudo-pagina">
+        <header id="topo" class="topo"></header>
+
+        <section class="conteudo">
+            <h1>Marcar Consulta</h1>
+
+            <form id="marcar-consulta" action="#" method="post" class="container-formulario">
+                <div class="input inp-motivo">
+                    <input id="input-motivo" name="motivo" type="text" required>
+                    <label for="input-motivo">Motivo</label>
+                </div>
+
+                <div class="input inp-paciente">
+                    <select id="input-paciente" name="paciente" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                    <label for="input-paciente">Paciente</label>
+                </div>
+
+                <div class="input inp-profissional">
+                    <select id="input-profissional" name="profissional" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                    <label for="input-profissional">Profissional</label>
+                </div>
+
+                <div class="input inp-data">
+                    <input id="input-data" name="data" type="date" required>
+                    <label for="input-data">Data</label>
+                </div>
+
+                <div class="input inp-horario">
+                    <select id="select-horario" name="horario" required>
+                        <option value="">Selecione um horário</option>
+                    </select>
+                    <label for="select-horario">Horário</label>
+                </div>
+
+                <div class="input inp-valor">
+                    <input id="input-valor" name="valor" type="number" step="0.01">
+                    <label for="input-valor">Valor (R$)</label>
+                </div>
+
+                <div class="switch-retorno">
+                    <p>Retorno?</p>
+                    <label class="switch-r">
+                        <input type="checkbox" id="input-retorno-switch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="container-botao-formulario">
+                    <button type="submit" class="botao-formulario">Marcar Consulta</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Scripts -->
+    <script src="../assets/navbar/navbar.js"></script>
+    <script src="cadastrar_consulta.js"></script>
+    <script src="../assets/input/input.js"></script>
+</body>
+
+</html>

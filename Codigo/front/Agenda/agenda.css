@@ -1,0 +1,109 @@
+:root {
+    --cor-principal: #9a00f6;
+    --cor-principal-forte: #670e9b;
+    --cor-principal-forte-hover: #4b0972;
+    --cor-principal-hover: #7900be;
+    --cor-principal-opaca: #9c00f618;
+
+    --cor-fundo: #f8f8f8;
+    --cor-indisponivel: #eeeeee9d;
+    --cor-nav: white;
+    --cor-texto: #000;
+    --cor-secundaria-texto: #707070;
+    --cor-tabela: #a7a7a7;
+    --cor-switch: #DDD;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+body.escuro {
+    --cor-fundo: #242526;
+    --cor-indisponivel: #19191aad;
+    --cor-nav: #19191a;
+    --cor-texto: #CCC;
+    --cor-secundaria-texto: #CCC;
+    --cor-switch: #FFF;
+    --cor-tabela: #464646;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+th {
+    background-color: var(--cor-nav);
+}
+
+td {
+    border: 1px solid var(--cor-tabela);
+}
+
+.hour-column {
+    border: none;
+    max-width: 40px;
+}
+
+.hour-column {
+    width: 40px;
+    background-color: var(--cor-nav);
+}
+
+.day-column {
+    width: 80px;
+}
+
+#prev-week, #next-week {
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 7px;
+    color: var(--cor-fundo);
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#prev-week:hover, #next-week:hover {
+    background-color: var(--cor-principal-hover);
+}
+
+#prev-week i , #next-week i {
+    font-size: 20px;
+    align-items: center;
+}
+
+.conteudo {
+    padding: 20px 7% 0 3%;
+    max-width: 200%;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+.tabela-horarios {
+    background-color: var(--cor-nav);
+    overflow-y: auto;
+    border-radius: 10px;
+    padding-right: 40px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+#nome-paciente {
+    opacity: .6;
+}

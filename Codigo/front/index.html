@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Login</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <main id="container-login">
+        <section class="container-form">
+            <div class="container-form-login">
+                <div class="container-form-logo">
+                    <img src="../assets/imagens/TerapIn - Logo.png" alt="Logo da CIC">
+                </div>
+
+                <form id="login-form" action="#" method="post">
+                    <div class="input inp-email-login">
+                        <input id="input-email" name="email" type="text" required>
+                        <label for="input-email">Email</label>
+                    </div>
+
+                    <div class="input inp-senha">
+                        <input id="input-password" name="password" type="password" required>
+                        <label for="input-password">Senha</label>
+                    </div>
+
+                    <div class="container-form-botao">
+                        <input type="submit" value="Entrar" id="botao-entrar">
+                    </div>
+                    <div class="container-form-botao">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="container-imagem">
+            <img src="../assets/imagens/fundologin.jpg" alt="">
+        </section>
+    </main>
+
+    <!-- Ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Scripts -->
+    <script src="Login/login.js"></script>
+    <script src="../assets/input/input.js"></script>
+</body>
+
+</html>

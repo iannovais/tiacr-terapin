@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Cadastrar pagamento</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar"></nav>
+
+    <main class="conteudo-pagina">
+        <header id="topo" class="topo"></header>
+
+        <section class="conteudo">
+            <div class="cabecalho-titulo">
+                <h1>Cadastrar Pagamento</h1>
+            </div>
+            <div class="cabecalho-pagamento">
+                <div class="informacao-consulta">
+                    <span class="texto-cabecalho-pagamento">Pagamento da consulta</span>
+                    <div class="nomePagamento">
+                        <div class="icons-pagamento"><i class="uil uil-user"></i></div>
+                        <span id="nome_pagamento"></span>
+                    </div>
+                    <div class="dataPagamento">
+                        <div class="icons-pagamento"><i class="uil uil-calendar-alt"></i></div>
+                        <span id="data_pagamento"></span>
+                    </div>
+                </div>
+                <div class="valor_pagamento">
+                    <span id="valor_pagamento">R$</span>
+                </div>
+            </div>
+
+            <div class="opcoes-pagamento">
+                <form id="cadastrar-pagamento" action="#" method="post" class="container-formulario">
+                    <div class="input inp-metodo">
+                        <select id="input-metodo" name="metodo" required>
+                            <option value="" disabled selected>Selecione o método de pagamento</option>
+                            <option value="PIX">PIX</option>
+                            <option value="Credito">Crédito</option>
+                            <option value="Debito">Débito</option>
+                        </select>
+                        <label for="input-metodo" id="label-metodo">Método</label>
+                    </div>
+                    
+                    <div class="input inp-data-pagamento">
+                        <input id="input-data-pagamento" name="data-pagamento" type="date" required>
+                        <label for="input-data-pagamento">Data do Pagamento</label>
+                    </div>
+
+                    <div class="input inp-parcelas">
+                        <select id="input-parcelas" name="parcelas" required>
+                            <option value="" disabled selected>Selecione a quantidade de parcelas</option>
+                            <option value="1x">1x</option>
+                            <option value="2x">2x</option>
+                            <option value="3x">3x</option>
+                            <option value="4x">4x</option>
+                            <option value="5x">5x</option>
+                            <option value="6x">6x</option>
+                        </select>
+                        <label for="input-parcelas" id="label-parcelas">Parcelas</label>
+                    </div>
+
+                    <div class="container-botao-formulario">
+                        <button type="submit" class="botao-formulario">Cadastrar Pagamento</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Scripts -->
+    <script src="../assets/navbar/navbar.js"></script>
+    <script src="../assets/search/search.js"></script>
+    <script src="cadastrar_pagamento.js"></script>

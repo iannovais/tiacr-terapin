@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Cadastrar paciente</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar"></nav>
+
+    <main class="conteudo-pagina">
+        <header id="topo" class="topo"></header>
+
+        <section class="conteudo">
+            <h1>Cadastrar Paciente</h1>
+
+            <form id="cad-paciente" action="#" method="post" class="container-formulario">
+                <!-- Nome completo -->
+                <div class="input inp-nome-completo">
+                    <input id="input-nome-completo" name="nome_completo" type="text" required>
+                    <label for="input-nome-completo">Nome completo</label>
+                </div>
+
+                <!-- Data de nascimento -->
+                <div class="input inp-data-nascimento">
+                    <input id="input-data-nascimento" name="data_nascimento" type="text" onfocus="(this.type='date')" onblur="if(this.value===''){this.type='text'}" required>
+                    <label for="input-data-nascimento">Data de nascimento</label>
+                </div>
+
+                <!-- Email -->
+                <div class="input inp-email">
+                    <input id="input-email" name="email" type="email" required>
+                    <label for="input-email">Email</label>
+                </div>
+
+                <!-- Telefone -->
+                <div class="input inp-telefone">
+                    <input id="input-telefone" name="telefone" type="text" required>
+                    <label for="input-telefone">Telefone</label>
+                </div>
+
+                <!-- RG -->
+                <div class="input inp-rg">
+                    <input id="input-rg" name="rg" type="text" required>
+                    <label for="input-rg">RG</label>
+                </div>
+
+                <!-- Sexo -->
+                <div class="input inp-sexo">
+                    <select id="input-sexo" name="sexo" required>
+                        <option value="" disabled selected>Selecione o sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                    <label for="input-sexo" id="label-sexo">Sexo</label>
+                </div>
+
+                <!-- Estado Civil -->
+                <div class="input inp-estado-civil">
+                    <input id="input-estado-civil" name="estado_civil" type="text" required>
+                    <label for="input-estado-civil">Estado civil</label>
+                </div>
+
+                <!-- CPF -->
+                <div class="input inp-cpf">
+                    <input id="input-cpf" name="cpf" type="text" required>
+                    <label for="input-cpf">CPF</label>
+                </div>
+
+                <!-- CEP -->
+                <div class="input inp-cep">
+                    <input id="input-cep" name="cep" type="text" required>
+                    <label for="input-cep">CEP</label>
+                </div>
+
+                <!-- Endereço -->
+                <div class="input inp-endereco">
+                    <input id="input-endereco" name="endereco" type="text" required>
+                    <label for="input-endereco">Endereço</label>
+                </div>
+
+                <!-- Número -->
+                <div class="input inp-numero">
+                    <input id="input-numero" name="numero" type="text" required>
+                    <label for="input-numero">Número</label>
+                </div>
+
+                <!-- Bairro -->
+                <div class="input inp-bairro">
+                    <input id="input-bairro" name="bairro" type="text" required>
+                    <label for="input-bairro">Bairro</label>
+                </div>
+
+                <!-- Cidade -->
+                <div class="input inp-cidade">
+                    <input id="input-cidade" name="cidade" type="text" required>
+                    <label for="input-cidade">Cidade</label>
+                </div>
+
+                <!-- Convênio -->
+                <div class="input inp-convenio">
+                    <select id="input-convenio" name="convenio">
+                        <option value="" disabled selected>Selecione convênio</option>
+                    </select>
+                    <label for="input-convenio" id="label-convenio">Convênio</label>
+                </div>
+
+                <!-- Plano -->
+                <div class="input inp-plano">
+                    <input id="input-plano" name="plano" type="text">
+                    <label for="input-plano">Plano</label>
+                </div>
+
+                <!-- Número da carteirinha -->
+                <div class="input inp-numero-carteirinha">
+                    <input id="input-numero-carteirinha" name="numero_carteirinha" type="text">
+                    <label for="input-numero-carteirinha">Número carteirinha</label>
+                </div>
+
+                <!-- Validade -->
+                <div class="input inp-validade">
+                    <input id="input-validade" name="validade" type="text" onfocus="(this.type='date')" onblur="if(this.value===''){this.type='text'}">
+                    <label for="input-validade">Validade</label>
+                </div>
+
+                <div class="container-botao-formulario">
+                    <button type="submit" class="botao-formulario">Cadastrar Paciente</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Scripts -->
+    <script src="../assets/navbar/navbar.js"></script>
+    <script src="cadastrar_paciente.js"></script>
+    <script src="../assets/input/input.js"></script>
+</body>
+
+</html>

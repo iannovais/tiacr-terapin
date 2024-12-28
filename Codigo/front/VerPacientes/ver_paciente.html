@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Pacientes</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar"></nav>
+
+    <main class="conteudo-pagina">
+        <header id="topo" class="topo"></header>
+
+        <section class="conteudo">
+            <div class="cabecalho-titulo">
+                <h1>Pacientes</h1>
+                <a class="botao-cadastrar-novo" href="../CadastrarPaciente/cadastrar_paciente.html">Cadastrar paciente</a>
+            </div>
+
+            <div id="exibir-todos"></div>
+        </section>
+    </main>
+
+    <!-- Ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Scripts -->
+    <script src="../assets/navbar/navbar.js"></script>
+    <script src="ver_paciente.js"></script>
+</body>
+
+</html>

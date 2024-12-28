@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Agenda</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+    <link rel="stylesheet" href="agenda.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar"></nav>
+
+    <main class="conteudo-pagina">
+        <header id="topo" class="topo"></header>
+
+        <section class="conteudo">
+            <div class="botoes-container">
+                <button id="prev-week"><i class="uil uil-arrow-left"></i></button>
+                <button id="next-week"><i class="uil uil-arrow-right"></i></button>
+            </div>
+        
+            <div class="tabela-horarios">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="data-hora"></th>
+                            <th id="domingo">Domingo</th>
+                            <th id="segunda">Segunda</th>
+                            <th id="terca">Terça</th>
+                            <th id="quarta">Quarta</th>
+                            <th id="quinta">Quinta</th>
+                            <th id="sexta">Sexta</th>
+                            <th id="sabado">Sábado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+        </section>        
+    </main>
+</body>
+
+<!-- Ajax -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Toastify JS -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<!-- Scripts -->
+<script src="../assets/navbar/navbar.js"></script>
+<script src="../assets/search/search.js"></script>
+<script src="agenda.js"></script>

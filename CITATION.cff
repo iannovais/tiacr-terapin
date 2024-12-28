@@ -1,0 +1,33 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Terapin
+authors:
+  - family-names: Lage Silva
+    given-names: Gabriel 
+  - family-names: dos Reis Novais
+    given-names: Ian 
+  - family-names: Nascimento Pires
+    given-names: João Antônio
+  - family-names: Carvalho Taveira de Souza
+    given-names: Marcos
+  - family-names: Nascimento Silva
+    given-names: Saulo José
+
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Alonso Veloso
+    given-names: Eveline 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Baroni de Carvalho
+    given-names: Juliana Amaral 
+keywords:
+  - Terapia
+  - Organização
+  - Agenda
+  - Consulta
+  - Gestão
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-2-ti3-8966100-terapin
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-12-11

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Cadastrar convênio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar"></nav>
+
+    <main class="conteudo-pagina">
+        <header id="topo" class="topo"></header>
+
+        <section class="conteudo">
+            <h1>Cadastrar convênio</h1>
+
+            <form id="cad-convenio" action="#" method="post" class="container-formulario">
+                <div class="input inp-nome">
+                    <input id="input-nome" name="nome" type="text" required>
+                    <label for="input-nome">Nome</label>
+                </div>
+
+                <div class="input inp-ans">
+                    <input id="input-ans" name="ans" type="text">
+                    <label for="input-ans">ANS</label>
+                </div>
+
+                <div class="input inp-limite">
+                    <input id="input-limite-retorno" name="limite_retorno" type="text">
+                    <label for="input-limite-retorno">Limite de retorno</label>
+                </div>
+
+                <div class="container-botao-formulario">
+                    <button type="submit" class="botao-formulario">Cadastrar convênio</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Scripts -->
+    <script src="../assets/navbar/navbar.js"></script>
+    <script src="cadastrar_convenio.js"></script>
+    <script src="../assets/input/input.js"></script>
+</body>
+
+</html>

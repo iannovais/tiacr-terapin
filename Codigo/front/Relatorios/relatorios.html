@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Relatórios</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar"></nav>
+
+    <main class="conteudo-pagina">
+        <header id="topo" class="topo"></header>
+
+        <section class="conteudo">
+            <h1>Relatório</h1>
+
+            <div class="tab-nav">
+                <button class="tab-button active" onclick="abrirTab('paciente')"><i class="uil uil-user-square"></i> Paciente</button>
+                <button class="tab-button" onclick="abrirTab('consultas')"><i class="uil uil-postcard"></i> Consultas</button>
+                <button class="tab-button" onclick="abrirTab('financeiro')"><i class="uil uil-file-exclamation"></i> Financeiro</button>
+            </div>
+
+            <!-- Relatório paciente -->
+            <section id="paciente" class="tab-content">
+                <form id="get-paciente" action="relatorio_cliente.html" method="GET" class="container-formulario">
+                    <div class="input inp-paciente">
+                        <select id="input-paciente" name="paciente" required></select>
+                        <label for="input-paciente">Paciente</label>
+                    </div>
+                
+                    <div class="input inp-periodo">
+                        <select id="input-periodo" name="periodo">
+                            <option value="" disabled selected>Selecione período</option>
+                            <option value="dia-atual">Dia atual</option>
+                            <option value="dia-anterior">Dia anterior</option>
+                            <option value="sem-atual">Semana atual</option>
+                            <option value="sem-anterior">Semana anterior</option>
+                            <option value="mes-atual">Mês atual</option>
+                            <option value="mes-anterior">Mês anterior</option>
+                            <option value="ano-atual">Ano atual</option>
+                            <option value="ano-anterior">Ano anterior</option>
+                        </select>
+                        <label for="input-periodo" id="label-periodo">Período</label>
+                    </div>
+                
+                    <div class="container-botao-formulario">
+                        <button type="submit" class="botao-formulario">Consultar relatório</button>
+                    </div>
+                </form>                
+            </section>
+
+            <!-- Relatório consulta -->
+            <section id="consultas" class="tab-content">
+                <form id="get-consulta" action="relatorio_consulta.html" method="GET" class="container-formulario">
+                    <div class="input inp-profissional">
+                        <select class="input-profissional" name="profissional" required></select>
+                        <label for="input-profissional">Profissional</label>
+                    </div>
+
+                    <div class="input inp-periodo">
+                        <select id="input-periodo" name="periodo">
+                            <option value="" disabled selected>Selecione período</option>
+                            <option value="dia-atual">Dia atual</option>
+                            <option value="dia-anterior">Dia anterior</option>
+                            <option value="sem-atual">Semana atual</option>
+                            <option value="sem-anterior">Semana anterior</option>
+                            <option value="mes-atual">Mês atual</option>
+                            <option value="mes-anterior">Mês anterior</option>
+                            <option value="ano-atual">Ano atual</option>
+                            <option value="ano-anterior">Ano anterior</option>
+                        </select>
+                        <label for="input-periodo">Período</label>
+                    </div>
+
+                    <div class="container-botao-formulario">
+                        <button type="submit" class="botao-formulario">Consultar relatório</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Relatório financeiro -->
+            <section id="financeiro" class="tab-content">
+                <form id="get-consulta" action="relatorio_financeiro.html" method="GET" class="container-formulario">
+                    <div class="input inp-profissional">
+                        <select class="input-profissional" name="profissional" required></select>
+                        <label for="input-profissional">Profissional</label>
+                    </div>
+
+                    <div class="input inp-periodo">
+                        <select id="input-periodo" name="periodo">
+                            <option value="" disabled selected>Selecione período</option>
+                            <option value="dia-atual">Dia atual</option>
+                            <option value="dia-anterior">Dia anterior</option>
+                            <option value="sem-atual">Semana atual</option>
+                            <option value="sem-anterior">Semana anterior</option>
+                            <option value="mes-atual">Mês atual</option>
+                            <option value="mes-anterior">Mês anterior</option>
+                            <option value="ano-atual">Ano atual</option>
+                            <option value="ano-anterior">Ano anterior</option>
+                        </select>
+                        <label for="input-periodo">Período</label>
+                    </div>
+
+                    <div class="container-botao-formulario">
+                        <button type="submit" class="botao-formulario">Consultar relatório</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <!-- Ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Scripts -->
+    <script src="../assets/navbar/navbar.js"></script>
+    <script src="relatorios.js"></script>
+    <script src="../assets/input/input.js"></script>
+</body>
+
+</html>

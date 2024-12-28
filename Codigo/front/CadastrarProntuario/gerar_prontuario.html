@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Cadastrar prontuário</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar"></nav>
+
+    <main class="conteudo-pagina">
+        <header id="topo" class="topo"></header>
+
+        <section class="conteudo">
+            <h1>Prontuário</h1>
+
+            <form id="cad-prontuario" action="#" method="post" class="container-formulario">
+
+                <div class="input inp-historico-pessoal">
+                    <textarea id="input-historico-pessoal" name="historico_pessoal" type="text"></textarea>
+                    <label for="input-historico-pessoal">Histórico pessoal</label>
+                </div>
+
+                <div class="input inp-exame-psiquico">
+                    <textarea id="input-exame-psiquico" name="exame_psiquico" type="text"></textarea>
+                    <label for="input-exame-psiquico">Exame psiquico</label>
+                </div>
+
+                <div class="container-botao-formulario">
+                    <button type="submit" class="botao-formulario">Salvar prontuário</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Scripts -->
+    <script src="../assets/navbar/navbar.js"></script>
+    <script src="gerar_prontuario.js"></script>
+    <script src="../assets/input/input.js"></script>
+</body>
+
+</html>

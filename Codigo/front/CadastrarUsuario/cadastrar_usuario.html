@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerapIn | Cadastrar Usuário</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/imagens/Terapin - Icone.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/padrao.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar"></nav>
+
+    <main class="conteudo-pagina">
+        <header id="topo" class="topo"></header>
+
+        <section class="conteudo">
+            <h1>Cadastrar Usuário</h1>
+
+            <form id="cad-usuario" method="post" class="container-formulario">
+                <!-- Nome Completo -->
+                <div class="input inp-nome-completo">
+                    <input id="input-nome-completo" name="nome_completo" type="text" required>
+                    <label for="input-nome-completo">Nome Completo</label>
+                </div>
+
+                <!-- Senha -->
+                <div class="input inp-senha">
+                    <input id="input-password" name="password" type="password" required>
+                    <label for="input-password">Senha</label>
+                </div>
+
+                <!-- Confirmar Senha -->
+                <div class="input inp-confirmar-senha">
+                    <input id="input-confirmar-senha" name="confirmar_senha" type="password" required>
+                    <label for="input-confirmar-senha">Confirmar Senha</label>
+                </div>
+
+                <!-- Função (Secretária ou Psicóloga) -->
+                <div class="input inp-role">
+                    <select id="input-role" name="role" required>
+                        <option value="" disabled selected>Selecione a função</option>
+                        <option value="Psicóloga">Psicóloga</option>
+                        <option value="Secretária">Secretária</option>
+                    </select>
+                    <label for="input-role">Função</label>
+                </div>
+
+                <!-- E-mail -->
+                <div class="input inp-email">
+                    <input id="input-email" name="email" type="email" required>
+                    <label for="input-email">E-mail</label>
+                </div>
+
+                <!-- Celular -->
+                <div class="input inp-celular">
+                    <input id="input-celular" name="celular" type="text" required pattern="\d{10}">
+                    <label for="input-celular">Telefone</label>
+                </div>
+
+                <div class="container-botao-formulario">
+                    <button type="submit" class="botao-formulario">Cadastrar Usuário</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+    <script src="../assets/navbar/navbar.js"></script>
+    <script src="cadastrar_usuario.js"></script>
+    <script src="../assets/input/input.js"></script>
+</body>
+
+</html>

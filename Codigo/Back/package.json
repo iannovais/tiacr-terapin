@@ -1,0 +1,27 @@
+{
+  "name": "terapin",
+  "version": "1.0.0",
+  "description": "projeto para clinica psicologica",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "mysql": "^2.18.1",
+    "node-schedule": "^2.1.1",
+    "nodemon": "^3.1.6",
+    "path": "^0.12.7",
+    "qrcode-terminal": "^0.12.0",
+    "terapin": "file:",
+    "whatsapp-web.js": "^1.26.0"
+  }
+}
